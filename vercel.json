@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/(.*)", "dest": "/Fresh.Api.dll" }
-  ],
   "builds": [
     {
-      "src": "Fresh.Api.dll",
-      "use": "@vercel/static"
+      "src": "Dockerfile",
+      "use": "@vercel/docker"
     }
   ]
 }
